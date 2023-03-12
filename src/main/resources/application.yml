@@ -1,0 +1,17 @@
+server:
+  port: 8082
+spring:
+  datasource:
+    driver-class-name:  org.postgresql.Driver
+    url:  jdbc:postgresql://localhost:5432/development?createDatabaseIfNotExist=true&useSSL=false
+    username: development
+    password: development
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        show_sql: true
+      format_sql: true
+
+
